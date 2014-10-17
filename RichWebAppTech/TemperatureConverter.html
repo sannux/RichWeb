@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Converter</title>
+<script type="text/javascript">
+	function validate()
+	{
+		if (document.convertor.Fahrenheit.Value.trim() == "")
+		{
+			alert('Enter Fahrenheit Value');
+		}
+		else if (document.convertor.Celsius.Value.trim() == "")
+		{
+			alert('Enter Celsius Value');	
+		}
+	}
+	function convert(degree)
+	{
+		if (degree == "C")
+		{
+			F = document.getElementById("c").value * 9 / 5 + 32;
+	        document.getElementById("f").value = Math.round(F);	
+		}
+		else
+		{
+			C = (document.getElementById("f").value -32) * 5 / 9;
+	        document.getElementById("c").value = Math.round(C);
+		}	
+	}
+</script>
+</head>
+<body>
+	<form name="convertor" action="#" method="get" onSubmit="">
+		<p>Fahrenheit : <input type="text" name="Fahrenheit" id="f"></p>
+		<p>Celsius : <input type="text" name="Celsius" id="c"></p>
+		<input type="button" value="Fahrenheit to Celsius" name="toCelsius" onClick="convert('F')">
+		<input type="button" value="Celsius to Fahrenheit" name="toFahrenheit" onClick="convert('C')">
+	</form>
+</body>
+</html>
