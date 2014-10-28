@@ -51,26 +51,25 @@ ul li.split
 	color: white;
 	font-size: 20px;
 }
-a
-{
-	text-decoration: none;
-}
 a:link
 {
 	color: white;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 a:hover
 { 
+    color: inherit;
     text-shadow: 0 0 5px #FFFFFF;
 }
-a:active
+a:visited
 {
 	color: white;
 	text-shadow: 0 0 5px #FFFFFF;
 }
-a:visited
+a:active
 {
+	text-shadow: 0 0 5px #FFFFFF;
 	color: white;
 }
 #body
@@ -87,20 +86,27 @@ a:visited
 	left: 0;
 	right: 0;
 }
-#about .left
+#about .info
 {
 	float: left;
 	width: 50%;
-	margin-top: 120px;
+	margin-top: 20px;
 }
-#about .left p
+#about .info p
 {
-	  width: 380px;
-      margin-top: 100px;
-      font-size: 28px;
-      font-family: "museo_slab500";
-      line-height: 50px;
+	  width: 60%;
+      font-size: 16px;
+      line-height: 25px;
       color: #333333;
+      margin-left: 30px;
+      text-align: justify;
+      box-shadow: 1px 15px 20px #aaaaaa;
+      background-color: #ffffff;
+      padding:10px;
+}
+#about .info .info2
+{
+	width: 70%;
 }
 #experience
 {
