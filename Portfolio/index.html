@@ -20,7 +20,7 @@
 			</div>
 			<!-- navigation section of the website -->
 			<nav>
-				<ul>
+				<ul id="mainNav">
 					<li> <a href="#" id="NavAbout" onclick="selectNav(this)">About Me </a></li>
 					<li class="split"> | </li>
 					<li> <a href="#experience" id="NavExperience" onclick="selectNav(this)">Experience </a></li>
@@ -36,10 +36,21 @@
 					<li> <a href="#contactMe" id="NavContactMe" onclick="selectNav(this)"> Contact Me </a></li>
 				</ul>
 				<div class="menu-icon">
-					<img src="images/navIcon.png"/>
+					<input type="button" onClick="openNav()"/>
+				</div>
+				<div id="navBar">
+				<ul >
+					<li> <a href="#" onclick="selectNav(this)">About Me </a></li>
+					<li> <a href="#experience"onclick="selectNav(this)">Experience </a></li>
+					<li> <a href="#skills" onclick="selectNav(this)">Skills </a></li>
+					<li> <a href="#education" onclick="selectNav(this)">Education </a></li>
+					<li> <a href="#awards" onclick="selectNav(this)">Awards </a></li>
+					<li> <a href="#interests" onclick="selectNav(this)">Interests </a></li>
+					<li> <a href="#contactMe" onclick="selectNav(this)"> Contact Me </a></li>
+				</ul>
 				</div>
 			</nav>
-		</div>
+			</div>
 	</header>
 	<!-- container of the website -->
 	<div class="body" id="size">
@@ -93,7 +104,7 @@
 					<div> JavaScript</div>
 					<div> Delphi</div>
 					<div> Java</div>
-					<div> C Programming</div>
+					<div> C </div>
 					<div> Python</div>
 					<div> C#</div>
 					<div> ERWin</div>
@@ -155,7 +166,7 @@
 					<div class="innerText">
 						<p class="ph1 awards">Student Learning With Communities 2012 Award Certificate</p>
 						<p class="ph2 awards">For most productive group fundraising event in Communication and Professional Development module.</p>
-						<p class="ph3 awards">2012</p>	
+						<p class="ph3 awards">2012</p>
 					</div>			
 				</div>
 			</div>

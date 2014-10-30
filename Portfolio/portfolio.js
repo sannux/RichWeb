@@ -3,19 +3,34 @@
  */
 /*global var*/
 var selectedNav = null; // keep track of currently selected
+var flag = 0;
 
 /*navigation style on select*/
 function selectNav(el) 
 {
     if (selectedNav) // unselect selected
     { 
-    	selectedNav.style.color = 'white';
     	selectedNav.style.fontSize = 'inherit';
     }
     selectedNav = el; // new selected
-    el.style.color = '#2e2e2e';
     selectedNav.style.fontSize = 'large';
 }
+
+/*dropdown navigation*/
+function openNav()
+{
+	if (flag % 2 == 0)
+	{
+		document.getElementById('navBar').style.display = 'block';
+		flag = flag + 1;
+	}
+	else
+	{
+		document.getElementById('navBar').style.display = 'none';
+		flag = flag + 1;
+	}
+}
+
 /*validation for the contact form*/
 function validateForm() 
 {
