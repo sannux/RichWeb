@@ -1,19 +1,24 @@
+<!--  
+ * Sanita Tifentale (c11432632)
+ -->
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="ISO-8859-1">
 	<meta name="author" content="Sanita Tifentale">
 	<meta name="description" content="portfolio">
-	<link href="style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" media="all">
 	<script src="portfolio.js"></script>
 	<title>C11432632 Sanita Tifentale</title>
 </head>
 <body>
+	<!-- header section of website -->
 	<header>
 		<div class="header">
 			<div class="logo">
-				<img src="images/logo.png" alt="Sanita Tifentale" title="Sanita Tifentale" />
+				<img src="images/logo.png" alt="Sanita Tifentale" title="Sanita Tifentale"/>
 			</div>
+			<!-- navigation section of the website -->
 			<nav>
 				<ul>
 					<li> <a href="#" id="NavAbout" onclick="selectNav(this)">About Me </a></li>
@@ -27,12 +32,19 @@
 					<li> <a href="#awards" id="NavAwards" onclick="selectNav(this)">Awards </a></li>
 					<li class="split"> | </li>
 					<li> <a href="#interests" id="NavInterests" onclick="selectNav(this)">Interests </a></li>
+					<li class="split"> | </li>
+					<li> <a href="#contactMe" id="NavContactMe" onclick="selectNav(this)"> Contact Me </a></li>
 				</ul>
+				<div class="menu-icon">
+					<img src="images/navIcon.png"/>
+				</div>
 			</nav>
 		</div>
 	</header>
-	<div class="body">
+	<!-- container of the website -->
+	<div class="body" id="size">
 		
+		<!-- "About me" section -->
 		<section id="about">
 			<div class="info">
 				<p>
@@ -42,8 +54,10 @@
 					I am constantly improving and developing my skills and abilities as I am always willing to learn and develop.
 				</p>
 			</div>
+			<div class="slideShow"></div>
 		</section>
 		
+		<!-- "Experience" section -->
 		<section id="experience">
 			<div class="section_title"><h1>Experience</h1></div>
 			<div class="left">
@@ -68,6 +82,7 @@
 			</div>
 		</section>
 		
+		<!-- "skills" section -->
 		<section id="skills">
 			<div class="section_title"><h1>Skills</h1></div>
 			<div class="left">
@@ -106,12 +121,13 @@
 				</div>
 			</div>
 		</section >
-
+		
+		<!-- "education" section -->
 		<section id="education">
 			<div class="section_title"><h1>Education</h1></div>
 			<div class="first">
 				<div class="img1">
-					<div class="logo"><img src="images/dit.png" alt="DIT" title="DIT" /></div>
+					<div class="logo"><img src="images/dit.png" alt="DIT" title="DIT"/></div>
 					<div class="logo1"><img src="images/st.gif" alt="St.Louise" title="St. Louise" /></div>
 				</div>
 				<div class="text1">
@@ -128,26 +144,36 @@
 			</div>
 		</section>
 		
+		<!-- "awards" section -->
 		<section id="awards">
 			<div class="section_title"><h1>Awards</h1></div>
 			<div class="first">
-				<img src="images/gold.gif"/>
+				<div class="imgContainer">
+					<img src="images/gold.gif"/>
+				</div>
 				<div class="text">
-					<p class="ph1 awards">Student Learning With Communities 2012 Award Certificate</p>
-					<p class="ph2 awards">For most productive group fundraising event in Communication and Professional Development module.</p>
-					<p class="ph3 awards">2012</p>				
+					<div class="innerText">
+						<p class="ph1 awards">Student Learning With Communities 2012 Award Certificate</p>
+						<p class="ph2 awards">For most productive group fundraising event in Communication and Professional Development module.</p>
+						<p class="ph3 awards">2012</p>	
+					</div>			
 				</div>
 			</div>
 			<div class="second">
-				<img src="images/gold.gif"/>
+				<div class="imgContainer">
+					<img src="images/gold.gif"/>
+				</div>
 				<div class="text">
-					<p class="ph1 awards">Certificate & Money award</p>
-					<p class="ph2 awards">For best student of 2008 Accountancy course in Latgales Transport & Telecommunication Technical School, Daugavpils, Latvia.</p>
-					<p class="ph3 awards">2008</p>
+					<div class="innerText">
+						<p class="ph1 awards">Certificate and Money award</p>
+						<p class="ph2 awards">For best student of 2008 Accountancy course in Latgales Transport and Telecommunication Technical School, Daugavpils, Latvia.</p>
+						<p class="ph3 awards">2008</p>
+					</div>
 				</div>
 			</div>
 		</section>
 		
+		<!-- "interests" section -->
 		<section id="interests">
 			<div class="section_title"><h1>Interests</h1></div>
 				<div class="grid">
@@ -163,7 +189,26 @@
 					<div><img src="images/g.gif" alt="games" title="Games" /><p class="ph2">Video Games</p></div>
 				</div>
 		</section>
+		
+		<section id="contactMe">
+			<div class="section_title"><h1>Contact Me</h1></div>
+			<div class="error" id="error">"All fields are required. Please fill them in and try again."</div>
+			<form id="contactForm" method="post" action="mailto:sanita.tifentale@mydit.ie" onsubmit="return validateForm()" enctype="text/plain">
+				<textarea placeholder="Send me a message.." id="message"></textarea>
+				<div id="wrapperDiv">
+					<div class="inputField">
+						 <input type="text" id="userName" placeholder="Name"/>
+					 </div>
+					 <div class="inputField">
+						<input type="text" id="userEmail" placeholder="Email"/>
+					</div>
+				 </div>
+				<input type="submit" value="Send Message">
+			</form>
+		</section>
 	</div>
+	
+	<!-- footer section -->
 	<footer>
 		&#169; CopyRights Belog to Sanita Tifentale
 		<a target="_blank" href="https://www.facebook.com/sanita.tifentale"><img src="images/facebook.png"/> </a>
