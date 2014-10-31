@@ -1,0 +1,577 @@
+/**
+ * Sanita Tifentale (c11432632)
+ */
+@CHARSET "ISO-8859-1";
+
+body
+{
+	font-family: 'HelveticaNeue-Light', 'Helvetica Light', 'Helvetica', Arial, sans-serif;
+	overflow-x:hidden;
+	margin:0; padding:0; width:100%; height:100%;
+	position: relative;
+}
+h1
+{
+	text-transform: uppercase;
+	color: #54babb;
+	font-size: 40px;
+	text-align: center;
+}
+/*header styling*/
+header
+{
+	width: 100%;
+	position: fixed;
+	height: 100px; 
+	background-color: #54babb;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	box-shadow: 1px 3px 10px #aaaaaa;
+}
+div.header
+{
+	width:100%;
+}
+header .logo img
+{
+	float: left;
+	margin-left: 7%;
+	margin-top: 20px;
+	width: 200px;
+	position: absolute;
+}
+header nav
+{
+	float: right;
+	margin-top: 25px;
+	width: 70%;
+}
+#mainNav ul
+{
+	list-style-type: none;	
+	margin: 20px;
+}
+#mainNav li
+{
+	display: inline;
+	float: left;
+	font-size: 14px;
+	margin-left: 10px;
+}
+#mainNav li.split
+{
+	font-family: "Time New Roman";
+	color: white;
+}
+div .menu-icon input
+{	
+	float: right;
+	display: none;
+	background-image: url("images/navIcon.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	height: 50px;
+	width: 50px;
+	margin-right: 10%;
+}
+#navBar li a
+{	
+	display:block;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	background: #2f3036;
+	text-decoration: none;
+	padding-left: 5%;
+	padding-right: 5%;
+	border: 1px solid white;
+
+}
+#navBar li
+{
+	list-style-type: none;
+
+}
+#navBar
+{
+	margin-top: 45px;
+	margin-right: -85px;
+	display: none;
+	float: right;
+	width: 60%;
+}
+a:link
+{
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+a:visited, a:hover, a:active
+{
+	color: white;
+	text-shadow: 0 0 5px #FFFFFF;
+}
+/*main container styling*/
+#body
+{
+	position: relative;
+}
+/*"About me" section styling*/
+#about
+{
+	width: 100%;
+	height: 550px;;
+	background-image: url('images/bg.jpg');
+	background-repeat: no-repeat;
+	/*make bg img responsive*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-top: 100px;
+	left: 0;
+	right: 0;
+}
+#about .info
+{
+	float: left;
+	width: 50%;
+	margin-top: 20px;
+}
+#about .info p
+{
+	  width: 60%;
+      font-size: 16px;
+      line-height: 25px;
+      color: #333333;
+      margin-left: 30px;
+      text-align: justify;
+      box-shadow: 1px 15px 20px #aaaaaa;
+      background-color: #ffffff;
+      padding:10px;
+}
+/*"Experience" section styling */
+#experience
+{
+	width: 100%;
+	height: 550px;
+	padding-top: 90px;
+	position: relative;
+}
+#experience .right, #experience .left
+{
+	float: right;
+	width: 50%;
+	text-transform: uppercase;
+	color: #2e2e2e;
+	text-align: center;
+}
+#experience .right .logo img
+{
+	width: 100%;
+	margin-top: 10%;
+	margin-left: 2%;
+}
+}
+#experience .right .logo img:hover, #experience .left .logo img:hover
+{
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#experience .right .logo, #experience .left .logo
+{
+	margin: 0 auto;
+	border-radius: 50%;
+	width: 30%;
+	height: 50%;
+	box-shadow: 1px 15px 40px #BBBBBB;
+}
+#experience .left .logo img
+{
+	width: 100%;
+	margin-top: 15%;
+	padding-bottom: 10%;
+}
+p.ph1
+{
+	margin-top: 40px;
+	font-size: 120%;
+}
+p.ph2
+{
+	font-size: 100%;
+}
+p.ph3
+{
+	font-size: 80%;
+}
+/*"Skills" section styling */
+#skills
+{
+	width: 100%;
+	height: 550px;
+	background-color: #F5F5F5;
+	margin-top: -20px;
+	padding-top: 90px;
+}
+#skills .title
+{
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 20px;	
+	text-transform: uppercase;
+}
+#skills .left
+{
+	float: left;
+	width: 60%;
+	height: 70%px;
+}
+#skills .right
+{
+	float: right;
+	width: 40%;
+	height: 70%px;
+}
+div .technical
+{
+	float: left;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 80%;
+	margin-left: 4%;
+}
+div .technical div
+{
+	margin: 1%;
+	border: 1px solid #54babb;
+	padding: 1%;
+	background-color: #ffffff;
+	width: 27%;
+	float: left;
+}
+div .soft
+{
+	float: right;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 80%;
+}
+div .soft div
+{
+	margin: 1.5%;
+	border: 1px solid #54babb;
+	padding: 1.5%;
+	background-color: #ffffff;
+	width: 40%;
+	float: left;
+}
+/*"Education" section styling*/
+#education
+{
+	width: 100%;
+	height: 560px;
+	padding-top: 90px;
+}
+#education .first
+{
+	width: 50%;
+	float: left;
+	text-transform: uppercase;
+	height: 70%;
+}
+div .img1
+{
+	width: 180px;
+	float: left;
+}
+#education .first .logo, #education .first .logo1
+{
+	height: 160px;
+	width: 160px;
+	margin-top: 10%;
+	border-radius: 50%;
+	padding: 2%;
+	box-shadow: 1px 15px 40px #BBBBBB;
+	margin-left: 50px;
+}
+#education .first .logo img
+{
+	width: 160px;
+	
+}
+#education .first .logo img:hover, #education .first .logo1 :hover
+{
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#education .first .logo1 img
+{
+	width: 160px;
+	margin-top: 20px;
+}
+div .text1
+{
+	float: right;
+	margin-right: 5%;
+	margin-top: 2%;
+}
+#education .second
+{
+	width: 50%;
+	height: 115.5%;
+	float: right;
+	background-image: url("images/big.jpg");
+	margin-top: -200px;
+}
+/*"Awards" section styling*/
+#awards
+{
+	width: 100%;
+	height: 550px;
+	background-color: #F5F5F5;
+	padding-top: 90px;
+}
+#awards .first
+{
+	float: left;
+	width: 49%;
+	position: relative;
+}
+#awards .second
+{
+	float: right;
+	width: 49%;
+	position: relative;
+}
+#awards .text
+{
+	float: right;
+	width: 70%;
+	text-align: center;
+	margin-right: 4.5%;
+	margin-top: -31%;
+	padding-left: 40px;
+	background-color: #54babb;
+}
+#awards img
+{
+	width: 100%;
+	float: left;
+}
+div .imgContainer
+{
+	width: 25%;
+	margin-top: 10%;
+	margin-left: 7%;
+	position: relative;
+}
+div .innerText
+{
+	margin-left: 11%;
+}
+/*"interests" section styling*/
+#interests
+{
+	width: 100%;
+	height: 650px;
+	padding-top: 10%;
+	positions: relative;
+	margin-bottom: 7%;
+}
+#interests .grid
+{
+	width: 100%;
+}
+#interests .grid img
+{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	border: 1px solid #54babb;
+	box-shadow: 0 0 20px #54babb;
+	position: relative;
+	
+	-webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+/*rotate the image to the side on hover*/
+#interests .grid img:hover 
+{
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+#interests .grid div
+{
+	float: left;
+	margin-right: 20px;
+	margin-left: 80px;
+	margin-top: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+/*contact me form*/
+#contactMe
+{
+	width: 100%;
+	height: 500px;
+	background-color: #F5F5F5;
+	padding-top: 10%;
+}
+div .error
+{
+	width: 78.5%;
+	text-align: center;
+	border: 1px solid;
+	padding: 1%;
+	color: white;
+	background-color: #FF9999;
+	margin-bottom: 2%;
+	margin-left: 10%;
+	display: none;
+}
+textarea
+{
+	float: left;
+	margin-left: 10%;
+	margin-right: 2%;
+	width: 55%;
+	height: 190px;
+	padding: 1%;
+}
+div .inputField input
+{
+	width: 20%;
+	height: 40px;
+	padding: 0.5%;
+	margin: 0 0 1.5% 0;
+	text-transform: uppercase;
+	float: left;
+}
+div .inputField input::-webkit-input-placeholder, div .inputField input:-moz-placeholder, textarea::-webkit-input-placeholder, textarea:-moz-placeholder
+{
+	color: #a1b2c3;
+	text-shadow: 0px -1px 0px #334f71;
+}
+div .inputField input:focus, textarea:focus
+{
+	box-shadow: 0 0 10px #54babb;
+  	border: 1px solid #54babb;
+}
+
+input[type=submit]
+{
+	width: 21.5%;
+	height: 60px;
+	float: left;
+	border: 1px solid;
+	cursor: pointer;
+	background-color: #54babb;
+	color: white;
+	font-size: 120%;
+}
+input[type=submit]:hover
+{
+	background-color: white;
+	color: #54babb;
+	box-shadow: 0 0 10px #54babb;
+}
+/*Footer section styling*/
+footer
+{
+	background-color: #2e2e2e;
+	color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	padding-left: 2%;
+	padding: 1%;
+	width: 100%;
+}
+footer img
+{
+	height: 35px;
+	float: right;
+	margin-right: 15px;
+}
+footer img:hover
+{
+	box-shadow: 0 0 20px #54babb;
+}
+@media (max-width: 1024px) 
+{
+	#mainNav
+	{
+		display: none;
+	}
+	div .menu-icon input
+	{
+		display: block;
+	}
+	div .text1
+	{
+		font-size: 90%;
+		position: absolute;
+		z-index: 0;
+		margin-left: 250px;
+	}
+	div .text1 p
+	{
+		background: white;
+	}
+	div .innerText p
+	{
+		font-size: 90%;
+	}
+	#interests
+	{
+		height: 750px;
+	}
+}
+@media (max-width: 950px) 
+{
+	#interests
+	{
+		height: 1000px;
+	}
+}
+@media (max-width: 670px) 
+{
+	div .imgContainer
+	{
+		display: none;
+	}
+	#awards .text
+	{
+		margin-top: 20%;
+	}
+	div .innerText
+	{
+		margin-left: 0;
+	}
+	#interests
+	{
+		height: 1200px;
+	}
+}
+@media (max-width: 500px) 
+{
+	#interests
+	{
+		height: 2200px;
+	}
+}
