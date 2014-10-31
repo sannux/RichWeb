@@ -48,13 +48,13 @@ function validateForm()
         return false;
     }
     /*if username is blank alert*/
-    else if (username == null || trim(username == "")) 
+    if (username == null || username.trim() == "") 
     {
     	document.getElementById('error').style.display = "block";
         return false;
     }
     /*if textarea is blank alert*/
-    else if (text == null || trim(text == ""))
+    if (text == null || text.trim() == "")
     {
     	document.getElementById('error').style.display = "block";
         return false;

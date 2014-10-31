@@ -82,18 +82,20 @@ div .menu-icon input
 #navBar li a
 {	
 	display:block;
-	height: 50px;
 	text-align: center;
 	line-height: 50px;
 	color: #fff;
 	background: #2f3036;
 	text-decoration: none;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
+	border: 1px solid white;
+
 }
 #navBar li
 {
 	list-style-type: none;
+
 }
 #navBar
 {
@@ -101,6 +103,7 @@ div .menu-icon input
 	margin-right: -85px;
 	display: none;
 	float: right;
+	width: 60%;
 }
 a:link
 {
@@ -164,15 +167,15 @@ a:visited, a:hover, a:active
 {
 	float: right;
 	width: 50%;
-	height: 70%;
 	text-transform: uppercase;
 	color: #2e2e2e;
 	text-align: center;
 }
 #experience .right .logo img
 {
-	width: 70%;
+	width: 100%;
 	margin-top: 10%;
+	margin-left: 2%;
 }
 }
 #experience .right .logo img:hover, #experience .left .logo img:hover
@@ -193,6 +196,7 @@ a:visited, a:hover, a:active
 {
 	width: 100%;
 	margin-top: 15%;
+	padding-bottom: 10%;
 }
 p.ph1
 {
@@ -293,10 +297,9 @@ div .img1
 {
 	height: 160px;
 	width: 160px;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-top: 10%;
 	border-radius: 50%;
-	padding: 5px;
+	padding: 2%;
 	box-shadow: 1px 15px 40px #BBBBBB;
 	margin-left: 50px;
 }
@@ -320,6 +323,7 @@ div .text1
 {
 	float: right;
 	margin-right: 5%;
+	margin-top: 2%;
 }
 #education .second
 {
@@ -380,7 +384,7 @@ div .innerText
 {
 	width: 100%;
 	height: 650px;
-	padding-top: 7%;
+	padding-top: 10%;
 	positions: relative;
 	margin-bottom: 7%;
 }
@@ -427,17 +431,17 @@ div .innerText
 	width: 100%;
 	height: 500px;
 	background-color: #F5F5F5;
-	padding-top: 5%;
+	padding-top: 10%;
 }
 div .error
 {
-	width: 77.5%;
+	width: 78.5%;
 	text-align: center;
 	border: 1px solid;
-	padding: 2%;
+	padding: 1%;
 	color: white;
 	background-color: #FF9999;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 	margin-left: 10%;
 	display: none;
 }
@@ -508,7 +512,7 @@ footer img:hover
 {
 	box-shadow: 0 0 20px #54babb;
 }
-@media (max-width: 1030px) 
+@media (max-width: 1024px) 
 {
 	#mainNav
 	{
@@ -520,7 +524,14 @@ footer img:hover
 	}
 	div .text1
 	{
-		display: none;
+		font-size: 90%;
+		position: absolute;
+		z-index: 0;
+		margin-left: 250px;
+	}
+	div .text1 p
+	{
+		background: white;
 	}
 	div .innerText p
 	{
@@ -528,10 +539,17 @@ footer img:hover
 	}
 	#interests
 	{
-		height: 1100px;
+		height: 750px;
 	}
 }
-@media (max-width: 560px) 
+@media (max-width: 950px) 
+{
+	#interests
+	{
+		height: 1000px;
+	}
+}
+@media (max-width: 670px) 
 {
 	div .imgContainer
 	{
@@ -547,7 +565,13 @@ footer img:hover
 	}
 	#interests
 	{
+		height: 1200px;
+	}
+}
+@media (max-width: 500px) 
+{
+	#interests
+	{
 		height: 2200px;
 	}
-	
 }
