@@ -1,0 +1,31 @@
+@CHARSET "ISO-8859-1";
+div 
+{
+	border: 1px solid;
+	margin: 5px;
+	padding: 3px;
+}
+
+#div_before
+{
+	background-color: blue;
+	position: static;
+}
+
+#div1
+{
+	background-color: yellow;
+	color: red;	
+	/*position: relative;
+	top: 20px;
+	left: -40px;*/
+}
+
+#divA
+{
+	background-color: black;
+	color: white;	
+	/*position: absolute;
+	top: 20px;
+	left: -40px;*/
+}

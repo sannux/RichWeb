@@ -1,0 +1,124 @@
+@CHARSET "ISO-8859-1";
+#left
+{
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #E8EFEA 100%);
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+    
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+#ContentDIV
+{
+	border:1px solid #D0E4EF;
+    border-right: 0;
+    
+}
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#cssmenu ul {
+  list-style: none;
+}
+#cssmenu li {
+  display: inline;
+  padding: 0;
+}
+#cssmenu a {
+  float: left;
+  text-decoration: none;
+}
+#cssmenu a span {
+  float: left;
+  display: block;
+  padding: 5px 15px 4px 6px;
+  color: #666;
+}
+
+/* End IE5-Mac hack */
+#cssmenu .active a span,
+#cssmenu a:hover span {
+  text-decoration: underline;
+}
+#break a span
+{
+	padding-left: 400px;
+}
+	.tftextinput4{
+		margin: 0;
+		padding: 6px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#666;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;	
+	}
+	.tfbutton4 {
+		margin: 0;
+		padding: 0;
+		width:30px;
+		height:30px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+		background-image: url(Search.png);
+		background-size: 30px 30px;
+	}
+		.tfbutton4::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(208,228,239,0), rgba(208,228,239,0.75), rgba(208,228,239,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(208,228,239,0), rgba(208,228,239,0.75), rgba(208,228,239,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(208,228,239,0), rgba(208,228,239,0.75), rgba(208,228,239,0)); 
+    background-image:      -o-linear-gradient(left, rgba(208,228,239,0), rgba(208,228,239,0.75), rgba(208,228,239,0)); 
+}
+#dif
+{
+	border: 0;
+	height: 1px;
+	background-color: black;
+}
+.box
+{
+	border: 1px solid grey;
+	width: 200px;
+	background-color: #EFEFEF;;
+}
+.box h4
+{
+	text-align: center;
+}

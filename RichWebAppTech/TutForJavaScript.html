@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Java Script</title>
+<script type="text/javascript">
+	function popup()
+	{
+		alert("hello");
+	}
+	function validate_form()
+	{
+		if (document.contactForm.UserName.value.trim() == "")
+		{
+			alert("Fill in the username!");
+		}
+	}
+</script>
+</head>
+<body>
+<h1>Please enter your details below</h1>
+	<form name="contactForm" action="#" method="get" onSubmit="validate_form()">
+		<p>Your name: <input type="text" name="UserName"></p>
+		<input type="button" value="Click Me!" name="clickMeButton" onclick="popup()"> <br>
+		<input type="submit" value="Submit" name="send" onclick=""> <br>
+	</form>
+	<a href="#" onmouseover="popup()">Hover me!</a> <!-- onmouseleave or -->
+</body>
+</html>
