@@ -1,0 +1,66 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#sidebar {
+    float: left;
+    width: 20%;
+    overflow: auto;
+}
+#rightColumn {
+    width: 70%;
+    background: #eee;
+    right: 0;
+    overflow: auto;
+    float: right;
+}
+
+#rightColumn h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #006aba;
+}
+
+
+#students {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#students li {
+    padding: 5px 20px;
+    border: 1px solid #eee;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+#questionnaires li {
+    padding: 0px 14px;
+    border: 1px solid #eee;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+#students li:first-child, #questionnaires li:first-child {
+    border-top: 0;
+}
+
+#students li:last-child, #questionnaires li:last-child {
+    border-bottom: 1px solid #eee;
+}
+
+#students li a, #questionnaires li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
+
+#students li a:hover, #questionnaires li a:hover  {
+    color: #006aba;
+}
+
+
